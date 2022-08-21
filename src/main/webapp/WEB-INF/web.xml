@@ -1,0 +1,17 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+<!-- This is step1- Configuring dispatcher servlet in web.xml file -->
+<web-app>
+  <display-name>Archetype Created Web Application</display-name>
+  <!-- Here are defining name of the servlet and dispatcher class name  -->
+  <servlet>
+  <servlet-name>spring</servlet-name>
+  <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+  </servlet>
+  <!-- Here we have to map servlet to url like which kind of url will it call "/" will handle all type of request which starts with "/"-->
+  <servlet-mapping>
+  <servlet-name>spring</servlet-name>
+  <url-pattern>/</url-pattern>
+  </servlet-mapping>
+</web-app>
